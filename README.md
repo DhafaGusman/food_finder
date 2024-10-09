@@ -217,3 +217,5 @@ Untuk panduan mengenai push ke GitHub adalah sebagai berikut.
 Jika langkah-langkah tersebut sudah kamu lakukan dan selesai, silahkan chat di grup bahwa kamu sudah menyelesaikan proses kodingan dan sudah push ke GitHub.
 
 Jika ada kendala, mohon informasikan di grup.
+
+© 2024 Kelompok Semoga Lulus
