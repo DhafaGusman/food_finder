@@ -30,7 +30,7 @@ Untuk proses instalasi adalah sebagai berikut.
 
 - Clone kodingan ini di Git Bash atau Terminal
 
-  ```markdown
+  ```bash
   git clone https://github.com/DhafaGusman/food_finder.git
   ```
 
@@ -121,3 +121,89 @@ Untuk tata cara atau panduan ketika anda koding web ini adalah sebagai berikut.
     Dengan huruf kecil dibagian depan dan bagian tengah adalah huruf kapital, seperti `hurufBesar`
 
 ## Push ke Github
+
+Untuk panduan mengenai push ke GitHub adalah sebagai berikut.
+
+- Buka Git Bash atau Terminal
+
+  Buka Git Bash atau Terminal di folder utama food_finder, dengan cara klik kanan di dalam folder, lalu pilih `Open Git Bash here` untuk Git Bash atau pilih `Open Terminal here` untuk Terminal.
+
+- Tambah branch
+
+  Tambahkan branch untuk menyimpan perubahan kamu ke dalam branch kamu sendiri.
+
+  ```bash
+  git branch [nama_kamu]
+  ```
+
+  Jika sudah menambahkan branch, pindah ke branch yang sudah kamu buat.
+
+  ```bash
+  git checkout [branch_kamu]
+  ```
+
+- Tambah perubahan
+
+  Jika kamu menambahkan perubahan di kodingan, lakukan `git add [file kamu]`. Contoh saya ingin menambahkan file `home.html`
+
+  ```bash
+  git add page/home/home.html
+  ```
+
+  Di mana `page` merupakan folder pertama/awalan, lalu `home` merupakann folder kedua, dan `home.html` merupakan file-nya.
+
+  Jika kamu ingin menambahkan seluruh folder yang berisi file kodingan kamu, gunakan '\*' untuk menambahkan semua file yang ada di dalam folder.
+
+  ```bash
+  git add page/home/*
+  ```
+
+  Jika kamu ingin menambahkan semua perubahan yang kamu lakukan, gunakan '.' untuk menambahkan semua file yang sudah dirubah. Contoh:
+
+  ```bash
+  git add .
+  ```
+
+- Commit
+
+  Setelah menambahkan perubahan/file/kodingan, lakukan `git commit` untuk commit dan menambahkan komentar pada perubahan yang telah dibuat. Contoh:
+
+  ```bash
+  git commit -m "Inisialisasi file home.html (Progres: 10%)"
+  ```
+
+  Ada beberapa hal yang harus diperhatikan ketika menambahkan komentar:
+
+  - Untuk penambahan file, kamu harus memulai dengan kata `Inisialisasi` lalu dibarengi dengan nama file yang ditambahkan dan diakhiri dengan progres kodingan berupa persen.
+
+  - Untuk update/perubahan file, kamu harus memulai dengan kata `Update: ` lalu dibarengi dengan nama file yang ditambahkan dan diakhiri dengan progres kodingan berupa persen. Contoh:
+
+  ```bash
+  git commit -m "Update: halaman home (Progres: 65%)"
+  ```
+
+  - Jika progres kodingan kamu udah mencapai 100% atau selesai, maka yang perlu ditambahkan adalah:
+
+  ```bash
+  git commit -m "Update: halaman home (Progres: 100% Selesai)"
+  ```
+
+- Remote repository
+
+  Setelah melakukan commit, tambahkan repository ini ke dalam Git Bash kamu.
+
+  ```bash
+  git remote add origin https://github.com/DhafaGusman/food_finder.git
+  ```
+
+- Push
+
+  Setelah melakukan remote repository, push ke branch kamu di repositori.
+
+  ```bash
+  git push -u origin [branch_kamu]
+  ```
+
+Jika langkah-langkah tersebut sudah kamu lakukan dan selesai, silahkan chat di grup bahwa kamu sudah menyelesaikan proses kodingan dan sudah push ke GitHub.
+
+Jika ada kendala, mohon informasikan di grup
