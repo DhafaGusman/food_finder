@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.google.com">
+  <a href="#">
     <img src="https://github.com/user-attachments/assets/0a156329-4e10-4599-903c-67c6b4f13481" alt="Logo Food Finder" width="400">
   </a>
 </p>
