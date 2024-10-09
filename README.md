@@ -178,25 +178,25 @@ Untuk panduan mengenai push ke GitHub adalah sebagai berikut.
 
   - Untuk penambahan file yang bukan HTML, CSS, dan Javascript, seperti assets, kamu harus memulai dengan kata `Inisialisasi` lalu dibarengi dengan nama file yang ditambahkan/file-file yang telah ditambahkan, tanpa persentase progres. Contoh:
 
-  ```bash
-  git commit -m "Inisialisasi logo, ilustrasi, dan foto"
-  ```
+    ```bash
+    git commit -m "Inisialisasi logo, ilustrasi, dan foto"
+    ```
 
   - Untuk update/perubahan file, kamu harus memulai dengan kata `Update: ` lalu dibarengi dengan nama file yang ditambahkan/file-file yang telah ditambahkan dan diakhiri dengan progres kodingan berupa persen. Contoh:
 
-  ```bash
-  git commit -m "Update: halaman home (Progres: 65%)"
-  ```
+    ```bash
+    git commit -m "Update: halaman home (Progres: 65%)"
+    ```
 
-  ```bash
-  git commit -m "Update: halaman home (Progres: 65%), halaman login (Progress: 90%)"
-  ```
+    ```bash
+    git commit -m "Update: halaman home (Progres: 65%), halaman login (Progress: 90%)"
+    ```
 
   - Jika progres kodingan kamu udah mencapai 100% atau selesai, maka yang perlu ditambahkan adalah:
 
-  ```bash
-  git commit -m "Update: halaman home (Progres: 100% Selesai)"
-  ```
+    ```bash
+    git commit -m "Update: halaman home (Progres: 100% Selesai)"
+    ```
 
 - Remote repository
 
