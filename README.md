@@ -174,12 +174,22 @@ Untuk panduan mengenai push ke GitHub adalah sebagai berikut.
 
   Ada beberapa hal yang harus diperhatikan ketika menambahkan komentar:
 
-  - Untuk penambahan file, kamu harus memulai dengan kata `Inisialisasi` lalu dibarengi dengan nama file yang ditambahkan dan diakhiri dengan progres kodingan berupa persen.
+  - Untuk penambahan file HTML, CSS, dan Javascript, kamu harus memulai dengan kata `Inisialisasi` lalu dibarengi dengan nama file yang ditambahkan/file-file yang telah ditambahkan dan diakhiri dengan progres kodingan berupa persen.
 
-  - Untuk update/perubahan file, kamu harus memulai dengan kata `Update: ` lalu dibarengi dengan nama file yang ditambahkan dan diakhiri dengan progres kodingan berupa persen. Contoh:
+  - Untuk penambahan file yang bukan HTML, CSS, dan Javascript, seperti assets, kamu harus memulai dengan kata `Inisialisasi` lalu dibarengi dengan nama file yang ditambahkan/file-file yang telah ditambahkan, tanpa persentase progres. Contoh:
+
+  ```bash
+  git commit -m "Inisialisasi logo, ilustrasi, dan foto"
+  ```
+
+  - Untuk update/perubahan file, kamu harus memulai dengan kata `Update: ` lalu dibarengi dengan nama file yang ditambahkan/file-file yang telah ditambahkan dan diakhiri dengan progres kodingan berupa persen. Contoh:
 
   ```bash
   git commit -m "Update: halaman home (Progres: 65%)"
+  ```
+
+  ```bash
+  git commit -m "Update: halaman home (Progres: 65%), halaman login (Progress: 90%)"
   ```
 
   - Jika progres kodingan kamu udah mencapai 100% atau selesai, maka yang perlu ditambahkan adalah:
