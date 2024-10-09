@@ -189,7 +189,7 @@ Untuk panduan mengenai push ke GitHub adalah sebagai berikut.
     ```
 
     ```bash
-    git commit -m "Update: halaman home (Progres: 65%), halaman login (Progress: 90%)"
+    git commit -m "Update: halaman home (Progres: 65%), halaman login (Progres: 90%)"
     ```
 
   - Jika progres kodingan kamu udah mencapai 100% atau selesai, maka yang perlu ditambahkan adalah:
