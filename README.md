@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="https://github.com/user-attachments/assets/0a156329-4e10-4599-903c-67c6b4f13481" alt="Logo Food Finder" width="400">
+    <img src="https://github.com/user-attachments/assets/2176aa19-d8e5-4f8f-b95a-df9b9667b4fe" alt="Logo Food Finder" width="400">
   </a>
 </p>
 
