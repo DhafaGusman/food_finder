@@ -52,16 +52,21 @@
           </ul>
           <ul class="navbar-list-right">
             <li class="navbar-item dropdown">
-              <a href="#" class="dropdown-btn text-bold"
-                >English
+              <a href="#" class="dropdown-btn text-bold" id="dropdownLocation"
+                >Location
                 <i data-feather="chevron-down" class="icon-dropdown"></i
               ></a>
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item">English</a>
-                <a href="#" class="dropdown-item">Bahasa Indonesia</a>
+                <a href="#" class="dropdown-item" id="useCurrentLocation"
+                  >Use your current location
+                  <i data-feather="crosshair" class="dropdown-item-icon"></i
+                ></a>
+                <a href="#" class="dropdown-item" id="insertLocation"
+                  >Insert location</a
+                >
               </div>
             </li>
-            <li class="navbar-item">
+            <li>
               <a href="#" class="button button-primary">Log in/Sign In</a>
             </li>
           </ul>
@@ -70,7 +75,8 @@
         <!-- section title web -->
         <section class="header-title">
           <h1 class="title-header">
-            <span id="titleHeader1">Find your food at</span>
+            <span id="titleHeader1"></span>
+            <span class="caret"></span>
             <br />
             <span class="title-brand-1">Food</span>
             <span class="title-brand-2">Finder</span>
@@ -100,13 +106,26 @@
           </button>
         </div>
       </div>
-      <div class="col"></div>
+      <div class="col">
+        <!-- slider -->
+        <div class="slider-container"></div>
+      </div>
     </header>
 
     <!-- categories section -->
-    <section id="categoriesSection"></section>
+    <section id="categoriesSection" class="categories-section">
+      <h2>Choose From Various Categories</h2>
+      <div class="categories">
+        <div class="card"></div>
+      </div>
+    </section>
 
     <!-- script -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="node_modules/js/script.js" type="text/javascript"></script>
   </body>
 </html>
