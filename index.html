@@ -36,50 +36,53 @@
   <body>
     <!-- navigation bar -->
     <nav class="navbar">
-      <div class="navbar-left">
-        <a href="index.html" class="navbar-logo">
-          <img
-            src="assets/img/logo/logo-food_finder.png"
-            alt="logo food finder"
-          />
-        </a>
-        <div class="navbar-line-break"></div>
-        <ul class="navbar-list-left">
-          <li class="navbar-item">
-            <a href="#" class="navbar-link active">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Discover</a>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <ul class="navbar-list-right">
-          <li class="navbar-item dropdown">
-            <a href="#" class="dropdown-btn text-bold" id="dropdownLocation"
-              >Location <i data-feather="chevron-down" class="icon-dropdown"></i
-            ></a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item" id="useCurrentLocation"
-                >Use your current location
-                <i data-feather="crosshair" class="dropdown-item-icon"></i
+      <div class="navbar-body">
+        <div class="navbar-left">
+          <a href="index.html" class="navbar-logo">
+            <img
+              src="assets/img/logo/logo-food_finder.png"
+              alt="logo food finder"
+            />
+          </a>
+          <div class="navbar-line-break"></div>
+          <ul class="navbar-list-left">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link active">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Discover</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <ul class="navbar-list-right">
+            <li class="navbar-item dropdown">
+              <a href="#" class="dropdown-btn text-bold" id="dropdownLocation"
+                >Location
+                <i data-feather="chevron-down" class="icon-dropdown"></i
               ></a>
-              <a href="#" class="dropdown-item" id="insertLocation"
-                >Insert location</a
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" id="useCurrentLocation"
+                  >Use your current location
+                  <i data-feather="crosshair" class="dropdown-item-icon"></i
+                ></a>
+                <a href="#" class="dropdown-item" id="insertLocation"
+                  >Insert location</a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="page/auth/login.html" class="button button-primary"
+                >Log in/Sign In</a
               >
-            </div>
-          </li>
-          <li>
-            <a href="page/auth/login.html" class="button button-primary"
-              >Log in/Sign In</a
-            >
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- main-content -->
-    <main>
+    <main class="main">
       <!-- section header -->
       <header class="header">
         <div class="header-col-left">
