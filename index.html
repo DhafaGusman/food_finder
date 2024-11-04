@@ -83,10 +83,28 @@
                 >
               </div>
             </li>
-            <li>
+            <li id="loginButton">
               <a href="page/auth/login.html" class="button button-primary"
                 >Log in/Sign In</a
               >
+            </li>
+            <li
+              id="profileMenu"
+              class="navbar-item dropdown"
+              style="display: none"
+            >
+              <a href="#" class="dropdown-btn text-bold">
+                <img
+                  src="assets/img/icon/user.jpg"
+                  alt="Profile"
+                  class="profile-img"
+                />
+                <i data-feather="chevron-down" class="icon-dropdown"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Profile</a>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
             </li>
           </ul>
         </div>
