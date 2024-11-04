@@ -67,6 +67,10 @@
           </ul>
         </div>
         <div class="navbar-right">
+          <div class="hamburger" onclick="toggleCanvas()" id="hamburgerIcon">
+            <i data-feather="menu"></i>
+          </div>
+
           <ul class="navbar-list-right">
             <li class="navbar-item dropdown">
               <a href="#" class="dropdown-btn text-bold" id="dropdownLocation"
@@ -107,6 +111,33 @@
               </div>
             </li>
           </ul>
+
+          <!-- Off-canvas menu container -->
+          <div class="offcanvas-menu" id="offCanvasMenu">
+            <ul>
+              <li>
+                <a href="#" class="dropdown-btn text-bold" id="dropdownLocation"
+                  >Location
+                  <i data-feather="chevron-down" class="icon-dropdown"></i
+                ></a>
+              </li>
+              <li>
+                <a href="page/auth/login.html" class="button button-primary"
+                  >Log in/Sign In</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-btn text-bold">
+                  Profile
+                  <i data-feather="chevron-down" class="icon-dropdown"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Profile</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
