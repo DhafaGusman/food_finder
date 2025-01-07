@@ -8,7 +8,8 @@
 @section("content")
 <div class="wrapper">
     <div class="title">Login Page</div>
-    <form action="../../index.html">
+    <form method="POST" action="{{ route('login') }}">
+      @csrf
       <div class="field">
         <input type="text" id="username" required />
         <label for="username">Username</label>
