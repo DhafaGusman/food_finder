@@ -16,7 +16,6 @@
     <title>@yield('title')</title>
 
     <!-- link style & favicon -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     @stack('styles')
     <link
       rel="shortcut icon"
@@ -27,25 +26,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
+    {{-- <link
       rel="stylesheet"
-      href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.min.css') }}"
-    />
+      href="{{ asset('bootstrap/css/bootstrap.min.css') }}"
+    /> --}}
 
     <!-- script -->
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <!-- konten -->
-    <div class="container">
-        @yield('content')
-    </div>
+    @yield('content')
 
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    {{-- <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script> --}}
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     @stack('script')
 </body>

@@ -1,0 +1,266 @@
+/* style for home */
+
+:root {
+    --primary-color: #E36414;
+    --secondary-color: #0F4C5C;
+    --text-color-black: #000000;
+    --text-color-white: #ffffff;
+}
+
+.splash {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    transition: all 1s ease;
+}
+
+.splash-logo {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-white);
+}
+
+.splash-logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.splash-logo span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.header {
+    margin: 80px auto;
+    padding: 10px 80px;
+    max-width: 1536px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin-top: 83px;
+    margin-bottom: 83px;
+}
+
+.title-header {
+    font-family: "DM Serif Display", serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.title-brand-1 {
+    color: var(--primary-color);
+}
+
+.title-brand-2 {
+    color: var(--secondary-color);
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-container {
+    width: 40vw;
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+.input-container input {
+    width: 100%;
+    padding-left: 74px;
+    padding-right: 30px;
+}
+
+.slider-container {
+    position: relative;
+    margin-top: 20px;
+    width: 40vw;
+    height: 100%;
+}
+
+.swiper-slide {
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider-content {
+    height: 100%;
+    border-radius: 30px;
+    align-content: center;
+    text-align: center;
+    color: var(--text-color-white);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.slider-description {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.button-circle-slider {
+    background-color: var(--text-color-white);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+  
+.button-circle-slider i {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1;
+}
+  
+.button-circle-slider:active {
+    border-radius: 20%;
+}
+  
+.slider-btn-prev {
+    position: absolute;
+    left: 10px; /* Sesuaikan jarak dari tepi kiri */
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.slider-btn-next {
+    position: absolute;
+    right: 10px; /* Sesuaikan jarak dari tepi kanan */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.categories-section {
+    margin: 80px auto;
+    padding: 0 80px;
+    max-width: 1536px;
+    box-sizing: border-box;
+}
+
+.categories {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+
+.discover-section {
+    margin: 80px auto;
+    padding: 0 80px;
+    max-width: 1536px;
+    box-sizing: border-box;
+}
+
+.discover-title {
+    margin-bottom: 15px;
+}
+
+.discover-description {
+    color: #999999;
+}
+
+.discover-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.discover-row .discover-col-1 {
+    justify-self: start;
+}
+
+.discover-row .discover-col-2 {
+    justify-self: end;
+}
+
+#restaurantList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+/* responsive */
+@media (max-width: 1400px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header-col-left {
+        width: 100%;
+    }
+
+    .header-col-right {
+        width: 100%;
+    }
+
+    .input-container {
+        width: 80dvw;
+    }
+
+    #scrollDownButton {
+        display: none;
+    }
+
+    .slider-container {
+        width: 85dvw;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
