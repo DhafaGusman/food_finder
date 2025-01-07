@@ -73,7 +73,7 @@
                     </div>
                 </li>
                 <li id="loginButton">
-                    <a href="page/auth/login.html" class="button button-primary"
+                    <a href="{{ route('login') }}" class="button button-primary"
                         >Log in/Sign In</a
                     >
                 </li>
