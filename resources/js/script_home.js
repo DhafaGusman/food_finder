@@ -1,0 +1,114 @@
+/* script_home.js */
+
+// Fungsi untuk splash screen
+let splash = document.querySelector(".splash");
+let logo = document.querySelector(".splash-logo");
+let logoSpan = document.querySelectorAll(".logo");
+
+window.addEventListener("DOMContentLoaded", function () {
+  this.setTimeout(() => {
+    logoSpan.forEach((span, idx) => {
+      this.setTimeout(() => {
+        span.classList.add("active");
+      }, (idx + 1) * 400);
+    });
+    this.setTimeout(() => {
+      logoSpan.forEach((span, idx) => {
+        this.setTimeout(() => {
+          span.classList.remove("active");
+          span.classList.add("fade");
+        }, (idx + 1) * 50);
+      });
+    }, 2000);
+    this.setTimeout(() => {
+      splash.style.top = "-100vh";
+    }, 2300);
+  });
+});
+
+// Untuk update placeholder
+function updatePlaceholder() {
+    const input = document.getElementById("formSearch");
+    const currentHour = new Date().getHours();
+  
+    if (currentHour < 12) {
+      input.placeholder = "What's your breakfast choice today?";
+    } else if (currentHour < 17) {
+      input.placeholder = "What's your lunch choice today?";
+    } else {
+      input.placeholder = "What's your dinner choice today?";
+    }   
+}
+window.onload = updatePlaceholder;
+
+// Untuk scroll down button
+document.getElementById("scrollDownButton").addEventListener("click", function () {
+    const aboutUsSection = document.getElementById("categoriesSection");
+    const targetPosition = aboutUsSection.getBoundingClientRect().top + window.pageYOffset;
+  
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth"
+    });
+});
+
+// Fungsi untuk ubah title agar bervariasi
+$(document).ready(function() {
+  // Daftar kalimat yang akan ditampilkan
+  var sentences = [
+    "Find your food at",
+    "Discover delights at",
+    "Uncover local bites at"
+  ];
+
+  var index = 0;
+  var charIndex = 0;
+  var currentSentence = "";
+  var typingSpeed = 50;
+
+  // Fungsi mengetik karakter demi karakter
+  function typeSentence() {
+    if (charIndex < currentSentence.length) {
+      // Tambahkan satu karakter ke teks
+      $("#titleHeader1").text($("#titleHeader1").text() + currentSentence[charIndex]);
+      charIndex++;
+      setTimeout(typeSentence, typingSpeed);
+    } else {
+      // Setelah selesai mengetik, tunggu sebelum mengganti teks
+      setTimeout(deleteSentence, 3000); 
+    }
+  }
+
+  // Fungsi untuk menghapus teks karakter demi karakter
+  function deleteSentence() {
+    if (charIndex > 0) {
+      // Hapus satu karakter dari teks
+      $("#titleHeader1").text(currentSentence.substring(0, charIndex - 1));
+      charIndex--;
+      setTimeout(deleteSentence, typingSpeed);
+    } else {
+      // Setelah selesai menghapus, ganti ke kalimat berikutnya
+      index = (index + 1) % sentences.length;
+      currentSentence = sentences[index];
+      setTimeout(typeSentence, typingSpeed);
+    }
+  }
+
+  // Mulai efek mengetik dengan kalimat pertama
+  currentSentence = sentences[index];
+  setTimeout(typeSentence, typingSpeed);
+});
+
+// Fungsi untuk swiperjs (slider/carousel)
+const sliderHome = new Swiper('.slider-container', {
+    slidesPerView: 1,
+    loop: true,
+    effect: "fade",
+    autoplay: {
+      delay: 10000,
+    },
+    navigation: {
+      nextEl: '.slider-btn-next',
+      prevEl: '.slider-btn-prev',
+    },
+});
